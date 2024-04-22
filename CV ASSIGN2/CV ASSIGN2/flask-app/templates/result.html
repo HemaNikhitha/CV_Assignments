@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            background-image: url('static/background-image.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif; /* Changed font */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #d75a49;
+            border-radius: 10px; /* Reduced border-radius */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #4a4a4a; /* Changed title color */
+            margin-bottom: 20px;
+            font-size: 32px; /* Increased font size */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font */
+        }
+
+        p {
+            color: #666; /* Changed paragraph color */
+            margin-bottom: 20px;
+            font-size: 20px; /* Increased font size */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font */
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 15px; /* Adjusted border-radius */
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn {
+            padding: 15px 30px; /* Increased button padding */
+            background-color: #339933; /* Changed button color */
+            color: #fff;
+            border: none;
+            border-radius: 25px; /* Changed button shape */
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 18px; /* Increased button font size */
+            font-family: 'Arial', sans-serif; /* Changed font */
+        }
+
+        .btn:hover {
+            background-color: #2d882d; /* Darker hover color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Result</h1>
+        <p>{{message}}</p>
+        <img src="{{ result_img }}" alt="Result Image">
+    </div>
+</body>
+</html>
